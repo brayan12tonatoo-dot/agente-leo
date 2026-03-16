@@ -2,17 +2,41 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Mi Agente ElevenLabs</title>
+  <title>Agente ElevenLabs</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+    #agent-container {
+      width: 100%;
+      max-width: 600px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Prueba de mi agente ElevenLabs</h1>
 
-  <!-- Widget -->
+  <h1>Mi Agente ElevenLabs</h1>
+  <p>Interactúa con tu agente aquí abajo:</p>
+
+  <!-- Contenedor del agente -->
   <div id="agent-container">
     <elevenlabs-convai agent-id="agent_9001kkvsj2v8e2vtj9ep7qg69q4h"></elevenlabs-convai>
   </div>
 
-  <!-- Script oficial -->
+  <!-- Script oficial de ElevenLabs (sin async para evitar carga incompleta) -->
   <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" type="text/javascript"></script>
+
 </body>
 </html>
